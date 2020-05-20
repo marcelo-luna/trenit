@@ -1,0 +1,8 @@
+{
+    "/msite/api": {
+      "target": "https://www.lefrecce.it/",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {"^/msite/api" : "https://www.lefrecce.it/msite/api/"}
+    }
+  }

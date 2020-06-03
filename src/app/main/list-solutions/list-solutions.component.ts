@@ -15,4 +15,8 @@ export class ListSolutionsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngOnChange(){
+    console.log(this.solutions);
+  }
+
 }

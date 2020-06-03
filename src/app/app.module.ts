@@ -9,7 +9,8 @@ import { MaterialModule } from '../material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchSolutionComponent } from './main/search-solution/search-solution.component';
-import { ListSolutionsComponent } from './main/list-solutions/list-solutions.component'
+import { ListSolutionsComponent } from './main/list-solutions/list-solutions.component';
+import { InfoTrainComponent } from './main/info-train/info-train.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +19,16 @@ import { ListSolutionsComponent } from './main/list-solutions/list-solutions.com
     HeaderComponent,
     FooterComponent,
     SearchSolutionComponent,
-    ListSolutionsComponent
+    ListSolutionsComponent,
+    InfoTrainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

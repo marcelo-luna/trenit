@@ -1,4 +1,4 @@
-<mat-grid-list cols="7" rowHeight="75px" *ngFor="let solution of solutions">
+<!-- <mat-grid-list cols="7" rowHeight="75px" *ngFor="let solution of solutions">
     <mat-grid-tile [colspan]=7>
         <mat-card>
             {{ solution.origin }} => {{ solution.destination }} : Ora: {{ solution.departurestring }}
@@ -6,4 +6,11 @@
             {{ solution.minprice }}
         </mat-card>
     </mat-grid-tile>
-</mat-grid-list>
+</mat-grid-list> -->
+<mat-selection-list #shoes [multiple]="false">
+    <mat-list-option *ngFor="let solution of solutions" routerLink="/info/{{ solution.idsolution }}" >
+        {{ solution.origin }} => {{ solution.destination }} : Ora: {{ solution.departurestring }}
+        Valore:
+        {{ solution.minprice }}
+    </mat-list-option>
+</mat-selection-list>

@@ -12,6 +12,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -27,10 +28,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatAutocompleteModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule
   ],
   providers: [ {provide: MAT_DATE_LOCALE, useValue: 'it-IT'} ],
-  exports: [ 
+  exports: [
     MatInputModule,
     MatDatepickerModule,
     MatFormFieldModule,
@@ -40,7 +42,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatCardModule,
     MatAutocompleteModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule
     ]
 })
 export class MaterialModule { }

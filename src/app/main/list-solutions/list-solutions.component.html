@@ -1,0 +1,9 @@
+<mat-grid-list cols="7" rowHeight="75px" *ngFor="let solution of solutions">
+    <mat-grid-tile [colspan]=7>
+        <mat-card>
+            {{ solution.origin }} => {{ solution.destination }} : Ora: {{ solution.departurestring }}
+            Valore:
+            {{ solution.minprice }}
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

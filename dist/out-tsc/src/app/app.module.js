@@ -6,21 +6,27 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '../material/material.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SearchSolutionComponent } from './main/search-solution/search-solution.component';
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     NgModule({
         declarations: [
             AppComponent,
-            MainComponent
+            MainComponent,
+            HeaderComponent,
+            FooterComponent,
+            SearchSolutionComponent
         ],
         imports: [
             BrowserModule,
             AppRoutingModule,
             FormsModule,
             HttpClientModule,
-            BrowserAnimationsModule
+            MaterialModule
         ],
         providers: [],
         bootstrap: [AppComponent]

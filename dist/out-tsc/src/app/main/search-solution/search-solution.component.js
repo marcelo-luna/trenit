@@ -1,8 +1,8 @@
 import { __decorate } from "tslib";
 import { Component } from '@angular/core';
+import { Solution } from 'src/app/shared/models/Solution';
 import { Observable } from 'rxjs';
-import { Solution } from '../shared/models/Solution';
-let MainComponent = class MainComponent {
+let SearchSolutionComponent = class SearchSolutionComponent {
     constructor(httpTrenitaliaService) {
         this.httpTrenitaliaService = httpTrenitaliaService;
         this.userFrom = "Paese";
@@ -68,12 +68,12 @@ let MainComponent = class MainComponent {
         return convdataTime;
     }
 };
-MainComponent = __decorate([
+SearchSolutionComponent = __decorate([
     Component({
-        selector: 'app-main',
-        templateUrl: './main.component.html',
-        styleUrls: ['./main.component.css'],
+        selector: 'search-solution',
+        templateUrl: './search-solution.component.html',
+        styleUrls: ['./search-solution.component.css']
     })
-], MainComponent);
-export { MainComponent };
-//# sourceMappingURL=main.component.js.map
+], SearchSolutionComponent);
+export { SearchSolutionComponent };
+//# sourceMappingURL=search-solution.component.js.map

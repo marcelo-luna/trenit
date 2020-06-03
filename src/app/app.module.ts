@@ -7,14 +7,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from '../material/material.module';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { SearchSolutionComponent } from './main/search-solution/search-solution.component';
+import { ListSolutionsComponent } from './main/list-solutions/list-solutions.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SearchSolutionComponent,
+    ListSolutionsComponent
   ],
   imports: [
     BrowserModule,
